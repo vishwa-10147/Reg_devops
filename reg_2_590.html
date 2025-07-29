@@ -105,51 +105,51 @@
       const terms = document.getElementById("terms").checked;
       const branch = document.getElementById("branch").value;
 
-      // Name check
       if (fname === "" || lname === "") {
         alert("Please enter both First and Last names.");
         return false;
       }
 
-      // DOB check
       if (dob === "") {
         alert("Please select your Date of Birth.");
         return false;
       }
-
-      // Email check
+        if (email === "") {
+            alert("Please enter your Email address.");
+            return false;
+        }
+        
       const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (!email.match(emailPattern)) {
         alert("Please enter a valid Email address.");
         return false;
       }
 
-      // Gender check
+      
       if (!gender) {
         alert("Please select your gender.");
         return false;
       }
 
-      // Phone check
+      
       const phonePattern = /^\d{10}$/;
       if (!phone.match(phonePattern)) {
         alert("Please enter a valid 10-digit Phone number.");
         return false;
       }
 
-      // Address check
+
       if (address === "") {
         alert("Please enter your address.");
         return false;
       }
 
-      // Terms check
       if (!terms) {
         alert("Please accept the terms and conditions.");
         return false;
       }
 
-      // Branch check
+      
       if (branch === "") {
         alert("Please select your branch.");
         return false;
