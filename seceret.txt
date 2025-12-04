@@ -1,0 +1,11 @@
+
+Merge secret part 1
+The
+Merge secret part 2
+quick
+Merge secret part 3
+brown
+Merge secret part 4
+fox
+
+Multi-stage branching complete! Secret message in message.txt
